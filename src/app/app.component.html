@@ -62,9 +62,15 @@ EP.4 สร้าง module มารับ component มาไว้เรี�
 (counterChange)="appCounter = $event">
 </app-action-bar> -->
 
-<!-- two ways -->
-<app-action-bar [(counter)]="appCounter">
+
+<!-- EP.10 two ways -->
+<!-- <app-action-bar [(counter)]="appCounter">
 </app-action-bar>
 <app-square-flex [divWidth]="appCounter">
+</app-square-flex> -->
 
-</app-square-flex>
+<!-- EP 11 overview Angular view -->
+
+<div>
+  <app-action-bar></app-action-bar>
+</div>
