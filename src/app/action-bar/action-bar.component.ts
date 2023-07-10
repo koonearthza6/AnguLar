@@ -60,6 +60,7 @@ export class ActionBarComponent {
   @Input() counter = 0;
   @Output() counterChange = new EventEmitter();
   @Input() step = 1;
+  @Input() inputDisplay = true
 
 
   decrease() {
