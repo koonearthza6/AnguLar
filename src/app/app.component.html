@@ -62,9 +62,53 @@ EP.4 สร้าง module มารับ component มาไว้เรี�
 (counterChange)="appCounter = $event">
 </app-action-bar> -->
 
-<!-- two ways -->
-<app-action-bar [(counter)]="appCounter">
+
+<!-- EP.10 two ways -->
+<!-- <app-action-bar [(counter)]="appCounter">
 </app-action-bar>
 <app-square-flex [divWidth]="appCounter">
+</app-square-flex> -->
 
-</app-square-flex>
+<!-- EP 11 overview Angular view -->
+
+<!-- ngif = Structural Directive คือการ ทำลาย view -->
+<!-- <div *ngIf="activate">
+  <app-action-bar></app-action-bar>
+</div>
+<button type="button" (click)="activate=true">activate</button> -->
+
+<!-- EP.15 -->
+<!-- <div *ngIf="activate else elseTemplate">
+  <app-action-bar></app-action-bar>
+</div>
+<ng-template #elseTemplate>
+  <div>
+    Activate Now
+  </div>
+</ng-template>
+<button type="button" (click)="activate=true">activate</button> -->
+
+<!-- <app-action-bar [inputDisplay]="false"></app-action-bar>
+<app-action-bar [inputDisplay]="true"></app-action-bar>
+ -->
+
+ <!-- EP.13 array push
+customer of customerList คือ การกำหนดตัวแปรในการเรียกใช้ customer-->
+ <!-- {{customerList[1]}}
+<ul>
+  <li *ngFor="let customer of customerList">{{customer}}</li>
+</ul>
+
+<button (click)="pushCustomer()">push</button>
+<button (click)="UnshiftCustomer()">Unshift</button> -->
+
+<!-- delate array -->
+{{customerList[0]}}
+<ul>
+  <li *ngFor="let customer of customerList; let i = index">{{customer}}
+    <button (click)="removeCustomer(i)">remove</button>
+  </li>
+</ul>
+
+<button (click)="pushCustomer()">push</button>
+<button (click)="unshiftCustomer()">Unshift</button>
