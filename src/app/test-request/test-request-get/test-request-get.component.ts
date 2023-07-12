@@ -12,10 +12,14 @@ export class TestRequestGetComponent {
   constructor(private http: HttpClient){}
 
   ngOnInit(): void {
-    this.http.get<Book[]>('https://www.anapioficeandfire.com/api/books')
+    
+    }
+  
+  searchBookList(name: string){
+    this.http.get<Book[]>('https://www.anapioficeandfire.com/api/books?name='+name)
     .subscribe(response=>{
       this.bookList = response;
-    })
+    });
   }
 
 }
