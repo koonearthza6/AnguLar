@@ -64,15 +64,60 @@ export class AppComponent {
   // }
 
 
-  customerList: string[] = ['customer1','customer2','customer3','customer4']
+//   customerList: string[] = ['customer1','customer2','customer3','customer4']
 
-  pushCustomer(){
-    this.customerList.push('customer' + (this.customerList.length+1));
-  }
-  unshiftCustomer(){
-    this.customerList.unshift('customer' + (this.customerList.length+1));
-  }
-  removeCustomer(index: number) {
-    this.customerList.splice(index, 1);
-  }
+//   pushCustomer(){
+//     this.customerList.push('customer' + (this.customerList.length+1));
+//   }
+//   unshiftCustomer(){
+//     this.customerList.unshift('customer' + (this.customerList.length+1));
+//   }
+//   removeCustomer(index: number) {
+//     this.customerList.splice(index, 1);
+//   }
+// }
+
+  // value: string = "test primeNG"
+  products=[
+    {
+      code: 11,
+      name:'balong'
+    },
+    {
+      code: 12,
+      name:'balong1'
+    },
+    {
+      code: 13,
+      name:'balong2'
+    },
+    {
+      code: 14,
+      name:'balong3'
+    },
+    {
+      code: 15,
+      name:'balong4'
+    },
+    {
+      code: 16,
+      name:'balong5'
+    },
+    {
+      code: 17,
+      name:'balong6'
+    },
+    {
+      code: 18,
+      name:'balong7'
+    },
+    {
+      code: 19,
+      name:'balong8'
+    },
+    {
+      code: 20,
+      name:'balong9'
+    }
+  ];
 }
