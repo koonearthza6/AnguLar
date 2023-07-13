@@ -8,7 +8,9 @@ import { MaxMinMeterComponent } from './max-min-meter/max-min-meter.component';
 import { SquareFlexComponent } from './square-flex/square-flex.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TestRequestModule } from './test-request/test-request.module';
-
+import { InputTextModule } from 'primeng/inputtext';
+import {FormsModule } from '@angular/forms';
+import { TableModule } from 'primeng/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,10 @@ import { TestRequestModule } from './test-request/test-request.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    TestRequestModule
+    TestRequestModule,
+    InputTextModule,
+    FormsModule,
+    TableModule
   ],
 
   providers: [],
